@@ -1,0 +1,128 @@
+.hero {
+  min-height: 100vh;
+  padding: 160px 0 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/hero/ar-condicionado.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.hero-container {
+  width: 100%;
+}
+.hero-content {
+  max-width: 850px;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 16px 32px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  height: 60px;
+  background-color: var(--primary-color);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  justify-self: start;
+  align-content: center;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
+
+.btn-secondary {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: black;
+}
+.hero-stats {
+  display: flex;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.stat span {
+  color: rgba(255, 255, 255, 0.7);
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-image {
+  position: relative;
+}
+
+.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  background: linear-gradient(135deg, rgba(0, 180, 255, 0.3), transparent);
+  filter: blur(40px);
+  z-index: -1;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-15px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
